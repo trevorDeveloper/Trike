@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Trike.Views.Temp"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#404040">
+            <StackLayout VerticalOptions="StartAndExpand"></StackLayout>
+            <StackLayout VerticalOptions="CenterAndExpand"></StackLayout>
+            <StackLayout VerticalOptions="End">
+                <Button x:Name="loginBtn"
+                    Clicked="loginBtn_Clicked"
+                    Text="Sign In "
+                    BackgroundColor="Orange"
+                    TextColor="Black" 
+                    AbsoluteLayout.LayoutBounds="0,0.8,1,80"
+                    AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional"
+                    Margin="20,20,20,0" 
+                    CornerRadius="25"/>
+                <Button x:Name="CreateAccountBtn"
+                Clicked="CreateAccountBtn_Clicked"
+                Text="Create Account"
+                TextColor="White" 
+                BackgroundColor="Transparent" 
+                BorderWidth="2"
+                BorderColor="Orange"
+                AbsoluteLayout.LayoutBounds="0,1,1,80"
+                AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
+                Margin="20,0,20,20" 
+                CornerRadius="25"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
